@@ -11,6 +11,7 @@ const effects = window.BlackoutEffects || createBlackoutEffects();
 window.BlackoutEffects = effects;
 const START_TRANSITION_MS = 1280;
 const START_HACK_SLICES = 20;
+const GAME_TITLE = "Blackout";
 const START_HACK_BLOCKS = 72;
 const START_HACK_GLYPHS = 34;
 const HINT_COOLDOWN_SECONDS = 20;
@@ -546,6 +547,14 @@ const els = {
   juryVictoryButton: document.querySelector("#juryVictoryButton"),
   juryDefeatButton: document.querySelector("#juryDefeatButton")
 };
+
+function enforceGameTitle() {
+  document.title = GAME_TITLE;
+  document.querySelector("#startTitle")?.replaceChildren(GAME_TITLE);
+  document.querySelector(".brand h1")?.replaceChildren(GAME_TITLE);
+}
+
+enforceGameTitle();
 
 document.querySelectorAll(".hotspot").forEach((button) => {
   button.addEventListener("click", () => openPuzzle(button.dataset.puzzle));
@@ -1470,6 +1479,7 @@ function restart() {
   els.creatorBanner.classList.remove("hidden");
   els.startButton.disabled = true;
   els.demoButton.disabled = true;
+  enforceGameTitle();
 }
 
 function startTimer() {
