@@ -1,7 +1,7 @@
 /* Room-specific states and pixel-art gameplay feedback. */
 
 .room {
-  --room-decor-offset: 24px;
+  --room-decor-offset: 0px;
 }
 
 .room .hotspot,
@@ -22,7 +22,7 @@
   background:
     linear-gradient(rgba(4, 8, 13, 0.28), rgba(4, 8, 13, 0.34)),
     radial-gradient(circle at 50% 38%, rgba(128, 255, 90, 0.12), transparent 44%),
-    url("assets/control-room-4x3.png") center 24px / cover no-repeat;
+    url("assets/control-room-4x3.png") center -16px / cover no-repeat;
 }
 
 .room-control::before {
@@ -52,7 +52,7 @@
   background:
     linear-gradient(rgba(4, 8, 13, 0.18), rgba(4, 8, 13, 0.28)),
     radial-gradient(circle at 52% 38%, rgba(90, 169, 230, 0.12), transparent 48%),
-    url("assets/mix-room.png") center 24px / cover no-repeat;
+    url("assets/mix-room.png") center -16px / cover no-repeat;
 }
 
 .room-mixroom::before {
@@ -188,42 +188,42 @@
 
 .mix-info-wind {
   left: 24%;
-  top: 28%;
+  top: 42%;
 }
 
 .mix-info-nuclear {
   left: 53%;
-  top: 31%;
+  top: 44%;
 }
 
 .mix-info-solar {
-  left: 78%;
-  top: 50%;
+  left: 79%;
+  top: 69%;
 }
 
 .mix-info-hydro {
-  left: 36%;
-  top: 58%;
+  left: 37%;
+  top: 82%;
 }
 
 .tech-info-washer {
-  left: 38%;
-  top: 48%;
+  left: 34%;
+  top: 62%;
 }
 
 .tech-info-dryer {
-  left: 53%;
-  top: 48%;
+  left: 48%;
+  top: 62%;
 }
 
 .tech-info-water {
-  left: 68%;
-  top: 41%;
+  left: 66%;
+  top: 48%;
 }
 
 .tech-info-car {
-  left: 86%;
-  top: 43%;
+  left: 84%;
+  top: 58%;
 }
 
 .room-weatherroom {
@@ -231,7 +231,7 @@
   background:
     linear-gradient(rgba(4, 8, 13, 0.18), rgba(4, 8, 13, 0.3)),
     radial-gradient(circle at 52% 38%, rgba(90, 169, 230, 0.14), transparent 48%),
-    url("assets/weather-room.png") center 24px / cover no-repeat;
+    url("assets/weather-room.png") center -16px / cover no-repeat;
 }
 
 .room-weatherroom::before {
@@ -261,7 +261,7 @@
   background:
     linear-gradient(rgba(4, 8, 13, 0.16), rgba(4, 8, 13, 0.28)),
     radial-gradient(circle at 52% 42%, rgba(79, 209, 165, 0.12), transparent 48%),
-    url("assets/technical-room.png") center 24px / cover no-repeat;
+    url("assets/technical-room.png") center -16px / cover no-repeat;
 }
 
 .room-laundry::before {
@@ -291,7 +291,7 @@
   background:
     linear-gradient(rgba(4, 8, 13, 0.18), rgba(4, 8, 13, 0.32)),
     radial-gradient(circle at 52% 42%, rgba(128, 255, 90, 0.14), transparent 48%),
-    url("assets/final-room.png") center 24px / cover no-repeat;
+    url("assets/final-room.png") center -16px / cover no-repeat;
 }
 
 .room-electrical::before {

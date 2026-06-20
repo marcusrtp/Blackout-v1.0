@@ -1378,7 +1378,7 @@ function winGame() {
             <strong class="victory-frequency-counter" id="victoryFrequencyCounter">${VICTORY_FREQUENCY_START.toFixed(1).replace(".", ",")} Hz</strong>
             <span>Stabilité retrouvée</span>
           </div>
-          <span class="victory-lead">La ville se rallume. La fréquence revient à sa valeur stable : nous avons évité le black-out.</span>
+          <span class="victory-lead">La ville se rallume. La fréquence revient à sa valeur stable : nous avons évité le blackout.</span>
         </div>
       </div>
       <span class="victory-report">
@@ -1390,7 +1390,7 @@ function winGame() {
         ${lessons}
       </span>
       <span class="victory-code">Rapport final : le réseau tient quand production, demande et moment de consommation restent cohérents.</span>
-      <span class="victory-conclusion">Nous n'avons pas seulement évité le black-out : nous avons compris pourquoi il arrive.</span>
+      <span class="victory-conclusion">Nous n'avons pas seulement évité le blackout : nous avons compris pourquoi il arrive.</span>
     `
   );
 }
@@ -1403,7 +1403,7 @@ function loseGame() {
   closeModal();
   showEnd(
     "Le timer a expiré",
-    "Suite à une surcharge du réseau, un black-out s'est abattu sur la région",
+    "Suite à une surcharge du réseau, un blackout s'est abattu sur la région",
     "<p>La production et la consommation n'ont pas été rééquilibrées à temps. L'échec reste utile : pour éviter une coupure, il faut agir sur la production disponible et sur le moment de consommation.</p>"
   );
 }

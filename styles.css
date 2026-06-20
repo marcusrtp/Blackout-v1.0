@@ -370,8 +370,8 @@ select {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 320px;
   grid-template-rows: auto minmax(0, 1fr);
-  gap: 16px;
-  padding: 16px;
+  gap: 10px;
+  padding: 10px;
   overflow: hidden;
 }
 
@@ -380,8 +380,8 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 14px 16px;
+  gap: 10px;
+  padding: 8px 10px;
   border: 1px solid var(--line);
   border-radius: 0;
   background: rgba(18, 24, 32, 0.84);
@@ -391,21 +391,21 @@ select {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  min-width: 190px;
+  gap: 9px;
+  min-width: 174px;
 }
 
 .home-button {
   position: relative;
   z-index: 36;
-  min-width: 96px;
-  min-height: 42px;
+  min-width: 88px;
+  min-height: 36px;
   white-space: nowrap;
 }
 
 .mode-badge {
-  min-height: 34px;
-  padding: 8px 10px;
+  min-height: 36px;
+  padding: 7px 9px;
   border: var(--pixel-line) solid var(--pixel-border);
   color: #102019;
   background: #80ff5a;
@@ -417,8 +417,8 @@ select {
 }
 
 .brand-mark {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   border: var(--pixel-line) solid var(--pixel-border);
   border-radius: 0;
   background:
@@ -435,6 +435,7 @@ select {
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 0;
+  white-space: nowrap;
 }
 
 h1,
@@ -444,19 +445,20 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-size: clamp(1.18rem, 2.4vw, 1.55rem);
+  white-space: nowrap;
 }
 
 .meters {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(3, minmax(160px, 1fr));
-  gap: 10px;
+  gap: 7px;
 }
 
 .meter-card {
-  min-height: 64px;
-  padding: 10px 12px;
+  min-height: 50px;
+  padding: 7px 9px;
   border: 1px solid var(--line);
   border-radius: 0;
   background: rgba(255, 255, 255, 0.05);
@@ -484,8 +486,10 @@ h1 {
 
 .meter-card strong {
   display: block;
-  margin-top: 6px;
-  font-size: 1.35rem;
+  margin-top: 3px;
+  font-size: 1.08rem;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .gauge-card {
@@ -500,7 +504,7 @@ h1 {
 }
 
 .gauge-track {
-  height: 12px;
+  height: 10px;
   overflow: hidden;
   border: 1px solid var(--pixel-border);
   border-radius: 0;
@@ -529,7 +533,7 @@ h1 {
   display: flex;
   min-height: 0;
   flex-direction: column;
-  padding: 14px;
+  padding: 10px;
   overflow: hidden;
 }
 
@@ -537,12 +541,12 @@ h1 {
   flex: 0 0 auto;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 8px;
-  margin-bottom: 12px;
+  gap: 7px;
+  margin-bottom: 8px;
 }
 
 .room-tab {
-  min-height: 42px;
+  min-height: 36px;
   border: 1px solid var(--line);
   border-radius: 0;
   color: var(--text);
@@ -2710,11 +2714,11 @@ input[type="checkbox"] {
   }
 
   .game-shell {
-    padding: 10px;
+    padding: 8px;
   }
 
   .stage {
-    padding: 8px;
+    padding: 6px;
   }
 
   .room {
@@ -3272,12 +3276,12 @@ input[type="checkbox"] {
   .meters {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     width: 100%;
-    gap: 5px;
+    gap: 4px;
   }
 
   .meter-card {
-    min-height: 44px;
-    padding: 6px 5px;
+    min-height: 40px;
+    padding: 5px 5px;
   }
 
   .meter-card .label {
@@ -3285,8 +3289,8 @@ input[type="checkbox"] {
   }
 
   .meter-card strong {
-    margin-top: 3px;
-    font-size: 0.78rem;
+    margin-top: 2px;
+    font-size: 0.72rem;
   }
 
   .gauge-card {
@@ -3322,7 +3326,7 @@ input[type="checkbox"] {
   .room {
     height: min(58dvh, 420px);
     min-height: 330px;
-    --room-decor-offset: 14px;
+    --room-decor-offset: 0px;
   }
 
   .room-control,
@@ -3330,7 +3334,7 @@ input[type="checkbox"] {
   .room-weatherroom,
   .room-laundry,
   .room-electrical {
-    background-position: center, center, center 14px !important;
+    background-position: center, center, center -8px !important;
     background-repeat: no-repeat, no-repeat, no-repeat !important;
     background-size: auto, auto, contain !important;
   }
@@ -3348,6 +3352,46 @@ input[type="checkbox"] {
 
   .room-title .eyebrow {
     font-size: 0.56rem;
+  }
+
+  .mix-info-wind {
+    left: 22%;
+    top: 40%;
+  }
+
+  .mix-info-nuclear {
+    left: 52%;
+    top: 42%;
+  }
+
+  .mix-info-solar {
+    left: 77%;
+    top: 64%;
+  }
+
+  .mix-info-hydro {
+    left: 37%;
+    top: 76%;
+  }
+
+  .tech-info-washer {
+    left: 33%;
+    top: 59%;
+  }
+
+  .tech-info-dryer {
+    left: 49%;
+    top: 59%;
+  }
+
+  .tech-info-water {
+    left: 66%;
+    top: 47%;
+  }
+
+  .tech-info-car {
+    left: 84%;
+    top: 56%;
   }
 
   .hotspot {
@@ -3580,6 +3624,111 @@ input[type="checkbox"] {
     margin-left: max(8px, calc(50% - 175px + 16px));
     transform: scale(0.54);
     transform-origin: top left;
+  }
+}
+
+/* Final desktop HUD compression: keeps the game area taller on wide screens. */
+@media (min-width: 1101px) {
+  .game-shell {
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .hud {
+    min-height: 58px;
+    max-height: 58px;
+    gap: 8px;
+    padding: 5px 8px;
+    overflow: hidden;
+  }
+
+  .brand {
+    min-width: 168px;
+    gap: 8px;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand h1 {
+    font-size: 1.08rem;
+    line-height: 1;
+  }
+
+  .brand .eyebrow {
+    font-size: 0.62rem;
+    line-height: 1;
+  }
+
+  .home-button,
+  .mode-badge {
+    min-height: 32px;
+  }
+
+  .home-button {
+    min-width: 82px;
+    padding: 0 12px;
+  }
+
+  .mode-badge {
+    display: grid;
+    place-items: center;
+    padding: 0 10px;
+  }
+
+  .meters {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 6px;
+  }
+
+  .meter-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 42px;
+    height: 42px;
+    padding: 5px 10px;
+  }
+
+  .meter-card .label {
+    font-size: 0.78rem;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .meter-card strong {
+    margin-top: 0;
+    font-size: 1.04rem;
+    line-height: 1;
+  }
+
+  .gauge-card {
+    display: grid;
+    grid-template-columns: auto minmax(120px, 1fr) auto;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  .gauge-card .label {
+    grid-column: auto;
+  }
+
+  .gauge-track {
+    height: 8px;
+  }
+
+  .stage {
+    padding: 8px;
+  }
+
+  .room-nav {
+    margin-bottom: 6px;
+  }
+
+  .room-tab {
+    min-height: 32px;
   }
 }
 
